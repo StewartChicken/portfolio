@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gene Calculator</title>
+
+	<link rel = "stylesheet" type = "text/css" href = "./style.css"></link>
+</head>
+<body>
+	<div id = "NavBar">
+		<ul class = "nav">
+			<li class = "nav"><a href = "./index.html">Home</a></li>
+			<li><a href = "./AboutMe.html">About Me</a></li>
+			<li><a href = "./Projects.html">Projects</a></li>
+			<li><a href = "https://github.com/StewartChicken" target = _blank>GitHub</a></li>
+			<li><a href = "./Contact.html">Contact</a></li>
+
+		</ul>
+	</div>
+	<div>
+		<h1 id = "title">Xanje Gene Calculator</h1>
+	</div>
+
+	<div>
+		<p id = "txtbody">
+			&nbsp&nbsp&nbsp&nbspI initially made this program for a friend, but I thought the logic behind it was pretty interesting, so I decided to include it into my projects list. The bulk of this project was based around calculating punnett squares for different genes/alleles. My friend would draw these dragon-like creatures that had different genetic characteristics, each of which could be combined with other genetic characteristics (through "mating"), which would result in new gene combinations to form. 
+		</p>
+	</div>
+	<div>
+		<img src = "./Xanje Pictures/GUI.png" width = 50% height = 50% class = "projectPictures">
+		</img>
+		<p id = "txtbody">
+			The GUI (created in Java) of the gene calculator is shown above.
+		</p><br>
+	</div>
+
+	<div>
+		<p id = "txtbody">
+			&nbsp&nbsp&nbsp&nbspThere were five total genes the calculator took into account: the Line Art, Markings, Color Mutations, Physical Mutations, and the Fertility (if the specimen was female). While the Line Art and Markings would only ever have one gene express itself, the Color and Physical Mutations may have up to five and sixteen expressions respectively (the number has gradually increased over time, so the true values may be different as of now). These genetic mutations can be passed down through offspring, and they can be carried recessively, dominantly, or homogeneously. Each offspring also has the probability of randomly obtaining a genetic mutation, regardless of whether or not the parents carry this mutation. The probability of this occuring is based on the mother's fertility: the lower the fertility, the higher the probability of genetic mutation. 
+		</p>
+	</div>
+
+	<div>
+		<img src = "./Xanje Pictures/Entries.png" width = 50% height = 50% class = "projectPictures">
+		<p id = "txtbody">
+			Here, the gene calculator is shown with its entries filled out.
+		</p><br>
+	</div>
+
+	<div>
+		<p id = "txtbody">
+			&nbsp&nbsp&nbsp&nbspThe most difficult logic for this program was definitely the incorporation of probability into the calculation of many different punnett squares. Because some of the genetic code could be up to 16 genes long, I needed to create a function that could would be useful for any length of gene string input by the user. I could not hard code the program to calculate punnett squares for three or four genes, it had to be loopable. I decided to separate each gene with a '//' marker. While all of the genes only contained two characters (ex: Gd), some combinations of genetic mutations resulted in the death of the 'offspring', and this occurence would be signified by the word 'death' being inserted into the genetic code (for the user to read). For example, a deceased offspring's genetic code may look like this: 
+			Aa//Bb//death//Cc//Dd. Because of this, whenever it was required for the program to read the just code, (for punnett squares, etc.), it could not simply read every two characters, skip the '//', and continue, it had to be able to read either two characters or the word 'death'. This, in it of itself, was not very complicated to do, but, in combination with the probability of random genetic mutations, it became very strenuous very quickly. 
+		</p>
+	</div>
+
+	<div>
+		<img class = "projectPictures" height = 50% width = 50% src = "./Xanje Pictures/Error.png"> 
+		</img>
+		<p id = "txtbody">
+			Should the user misuse the program (in such a way that the program must throw an exception/error), they will be informed with red text as seen above. (The present error displayed is thrown whenever the user submits an empty textfield, ie. typing something, deleting it, and still submitting it to the breeder)
+		</p><br>
+	</div>
+	<div>
+		<p id = "txtbody">
+			&nbsp&nbsp&nbsp&nbsp I ended up learning quite a bit from this project, and that is also part of the reason I decided to include it in my projects list. This was the first time I combined a GUI with a more complex program. I also did a lot of experimentation with exception throwing and exception handling, and I developed a pretty firm grasp on their applications. All in all, this project went very well, and I achieved the envisioned goal I had set when first starting it. 
+		</p>
+
+		<img src = "./Xanje Pictures/ColorSettings.png" width = 50% height = 50% class = "projectPictures">
+
+		<p id = "txtbody">
+			Should the user wish to change the colors of the various elements contained within the GUI, they may do so using the Color Scheme settings option in the top left of the screen. 
+		</p>
+
+		<img src = "./Xanje Pictures/Color Picker.png" width = 50% height = 50% class = "projectPictures">
+
+		<p id = "txtbody">
+			The image above shows the color picture window the user is presented with when they decide to change the color of the screen's elements. 
+		</p>
+
+	</div>
+
+</body>
+</html>

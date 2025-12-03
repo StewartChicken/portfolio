@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MkI Sentry Turret</title>
+
+	<link rel = "stylesheet" type = "text/css" href = "style.css"></link>
+</head>
+<body>
+	<div id = "NavBar">
+		<ul class = "nav">
+			<li class = "nav"><a href = "index.html">Home</a></li>
+			<li><a href = "AboutMe.html">About Me</a></li>
+			<li><a href = "Projects.html">Projects</a></li>
+			<li><a href = "https://github.com/StewartChicken" target = _blank>GitHub</a></li>
+			<li><a href = "Contact.html">Contact</a></li>
+
+		</ul>
+	</div>
+	<div>
+		<h1 id = "title">Mark I Sentry Turret</h1>
+	</div>
+
+	<div>
+		<div>
+			<p id = "txtbody">
+				&nbsp&nbsp&nbsp&nbspThis project marks my first attempt to explore the realm of embedded systems. I used an arduino, a joystick, a 5V relay, a breadboard, and a copious number of jumper wires to circuit bend an electric foam dart gatling gun into a fun and comedically intimidating sentry turret that battles intruders and defends its territory. 
+			</p>
+
+			<div>
+				<img src = "Sentry Turret Pictures/Rear Angle.jpg" width = 35% height = 35% class = "projectPictures">
+				</img>
+				<p id = "txtbody">
+					&nbsp&nbsp&nbsp&nbsp The above image shows the turret from a rear perspective and exemplifies the highly convoluted/thrown-together circuitry of the project. Several of the sketchy features can be seen in this photo, including the breadboard, which was hot glued to the side, the Arduino, which was hot glued to the top, the joystick, which is precariously hanging by it's jumper wires, and many more. 
+				</p><br>
+			</div>
+		</div>
+
+		<div>
+			<p id = "txtbody"> 
+				&nbsp&nbsp&nbsp&nbsp While I initially had very high expectations for the project, I found that my very limited prior knowledge in the field of embedded systems was not sufficient to see the completion of my goals. At first, I planned for this turret to incorporate a computer vision library that would whitelist recognized 'friendly' faces from the barage of nerf darts that awaited the unknown entities. Unfortunately, I lacked the knowledge base required to incorporate these types of algorithms into microcontrollers/circuits, so that idea was quickly discarded. 
+
+				<div>
+					<img src = "Sentry Turret Pictures/Arduino.jpg" width = 35% height = 35% class = "projectPictures">
+					</img>
+					<p id = "txtbody">
+						&nbsp&nbsp&nbsp&nbsp Here you can see the Arduino's "mount" atop the turret's frame. Initially, there was a camera module incorporated into the circuitry in order to carry out the facial recognition. But since that feature was postponed (to a future model of turret), there is no camera. This picture further highlights the haphazardly arranged set of wires/parts. 
+					</p><br>
+				</div>
+			</p>
+		</div>
+
+		<div>
+			<p id = "txtbody">
+				&nbsp&nbsp&nbsp&nbsp I settled for a more rudimentary design that included both a manual control mode, where a user can position/fire the turret, and a very simple 'sentry' mode, where the turret sweeps its barrel back and forth over the area it is guarding (unfortunately, the sentry mode offered no true protective functionality and just acted as a placeholder for potential future upgrades). I was able to create these features to a relatively high degree of success, but what I failed to account for, as I would later realize, was how large of an impact my lack of mechanical engineering knowledge would have on the outcome of the project. I, naively, assumed that I could get away with a very sketchy construction that included an arbitrary collection of materials and a whole lot of hot glue. 
+			</p>
+			<div>
+				<img src = "Sentry Turret Pictures/Connection.jpg" width = 35% height = 35% class = "projectPictures">
+				</img>
+				<p id = "txtbody">
+					&nbsp&nbsp&nbsp&nbsp The extremely precarious (and ineffective) connection between the turret and the stepper motor can be witnessed above. It's basically a square-ish block of wood which is shakily connected to the motor via an excessive amount of hot glue and a pilot hole. 
+					My lack of mechanical engineering experience really shines through here, but, all things considered, I'm glad I was able to connect the turret and the motor to <i>some</i> degree.
+				</p><br>
+			</div>
+		</div>
+
+		<p id = "txtbody">
+			&nbsp&nbsp&nbsp&nbsp As it would turn out, this thrown-together frame did not bode well for structural integrity of the project, and the machine ended up looking lopsided and, quite frankly, a little sad. Despite these numerous short comings, I did end up learning quite a bit about embedded systems once the "Mark I" sentry turret was completed. I developed pretty solid base level understanding of various electrical components and their respective functionalities. I learned a little bit about resistors, transistors, relays, voltages, currents, DC motors, stepper motors/drivers, series/parallel circuits, positive/negative battery terminals (Cathodes/Anodes), push-button switches, voltage boosters, and more. I also learned where my limitations were, and where I need to expand my knowledge before attempting to bring the "Mark II" to life. Ultimately, even though the project did not become what I envisioned, I am happy with what I learned, and I am happy that will be able to try again once I gain more experience. 
+		</p>
+
+		<div>
+			<img src = "Sentry Turret Pictures/Breadboard.jpg" width = 35% height = 35% class = "projectPictures">
+				</img>
+				<p id = "txtbody">
+					&nbsp&nbsp&nbsp&nbsp A closer/more illuminating image of the breadboard/circuitry can be seen above. While a large portion of the wires connect directly to the Arduino, a few of them lead into the turret's interior where they connect with its various DC motors. The joystick module can be seen hanging down from its connections, and the wiring which connects the Arduino to the Stepper Motor Driver is secured to the green connection port. A pushbutton is placed directly onto the breadboard and acts as a "mode switch" for the user. 
+				</p><br>
+		</div>
+		<div>
+			<img src = "Sentry Turret Pictures/Belt.jpg" width = 35% height = 35% class = "projectPictures">
+				</img>
+				<p id = "txtbody">
+					&nbsp&nbsp&nbsp&nbsp Here, the other side of the turret can be seen. The two wires feeding into the drilled hole are connected to the DC motor that spun the barrels and created the "gatling" feature of the turret. Unfortunately, I undervolted the connection and the motor did not have enough torque to spin the entirety of the barrel. I did not know how to give the DC motor access to a larger power source without another relay (which I didn't have) or without a transistor (which I wasn't able to figure out), so the gatling feature was reserved for the MkII.
+				</p>
+		</div>
+	</div>
+
+	<div>
+		<h3 id = "title">
+			Conclusion
+		</h3>
+		<p id = "txtbody">
+			&nbsp&nbsp&nbsp&nbsp All in all, despite the shortcomings of this project, I think it went pretty well. I learned quite a bit about programming and embedded systems, as well as basic circuitry/electronics. When I try again, I hope to have a more thorough understanding of embedded systems so that I can bring more of my desired features to life. 
+		</p>
+	</div>
+	
+</body>
+</html>
