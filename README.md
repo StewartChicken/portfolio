@@ -1,0 +1,1 @@
+All this contains at the moment is a placeholder portfolio site with my contact information and resume. A genuine website is in development. 
