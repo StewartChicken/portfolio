@@ -69,7 +69,8 @@ const Project = () => {
                   {/* If you want Next Image optimization, keep width/height consistent */}
                   <div className="gallery-image">
                     <Image
-                      src={img.src}
+                      //src={img.src}
+                      src='/project_images/riscv/EX.png'
                       alt={img.description || `${data.title} image ${idx + 1}`}
                       fill
                       sizes="(max-width: 768px) 100vw, 800px"
