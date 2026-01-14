@@ -9,6 +9,10 @@ import right_arrow_white from './right-arrow-white.png'
 import right_arrow_bold from './right-arrow-bold.png'
 import download_icon from './download-icon.png'
 
+import EX from './project_images/riscv/EX.png'
+import ID from './project_images/riscv/ID.png'
+import IF from './project_images/riscv/IF.png'
+
 export const assets = {
     github,
     github_light,
@@ -19,6 +23,9 @@ export const assets = {
     right_arrow_white,
     right_arrow_bold,
     download_icon,
+    EX,
+    ID,
+    IF
 };
 
 export const workData = [

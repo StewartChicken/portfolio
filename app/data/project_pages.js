@@ -12,6 +12,8 @@
 //  - Some technical details
 //  - Iteration evidence
 
+import { assets } from '@/assets/assets'
+
 export const projectPageData = {
     /*
     trinity:
@@ -74,15 +76,18 @@ export const projectPageData = {
         duration: 'One Semester',
         images: [
             {
-                src: '/project_images/riscv/IF.png',
+                //src: '/project_images/riscv/IF.png',
+                src: assets.IF,
                 description: 'This diagram shows the design for the Instruction Fetch stage of the pipeline during a late stage of the project.'
             },
             {
-                src: '/project_images/riscv/ID.png',
+                //src: '/project_images/riscv/ID.png',
+                src: assets.ID,
                 description: 'This diagram shows the design for the Instruction Decode stage of the pipeline during a late stage of the project.'
             },
             {
-                src: '/project_images/riscv/EX.png',
+                //src: '/project_images/riscv/EX.png',
+                src: assets.EX,
                 description: 'This diagram shows the design for the Execute stage of the pipeline during a late stage of the project.'
             }
         ]
