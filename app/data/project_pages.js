@@ -47,12 +47,12 @@ export const projectPageData = {
         duration: 'One Semester',
         images: [
             {
-                src: 'portfolio/project_images/qegshare/block.png',
+                src: '/project_images/qegshare/block.png',
                 description: `This is the general block diagram for the proposed \'Quantum\' branch predictor. We add a \'Quantum\' table and a 
                             measurement gate into the functionality of the classic GShare branch predictor scheme. `
             },
             {
-                src: 'portfolio/project_images/qegshare/results.png',
+                src: '/project_images/qegshare/results.png',
                 description: `This image shows the results of our simulated predictor when simulating different algorithms. While they did not
                             outperform the classical predictor with our simulated parameters, there is lots of future work to be done in this area.`
             }
@@ -74,15 +74,15 @@ export const projectPageData = {
         duration: 'One Semester',
         images: [
             {
-                src: 'portfolio/project_images/riscv/IF.png',
+                src: '/project_images/riscv/IF.png',
                 description: 'This diagram shows the design for the Instruction Fetch stage of the pipeline during a late stage of the project.'
             },
             {
-                src: 'portfolio/project_images/riscv/ID.png',
+                src: '/project_images/riscv/ID.png',
                 description: 'This diagram shows the design for the Instruction Decode stage of the pipeline during a late stage of the project.'
             },
             {
-                src: 'portfolio/project_images/riscv/EX.png',
+                src: '/project_images/riscv/EX.png',
                 description: 'This diagram shows the design for the Execute stage of the pipeline during a late stage of the project.'
             }
         ]
@@ -103,7 +103,7 @@ export const projectPageData = {
         duration: 'One Year',
         images: [
             {
-                src: 'portfolio/project_images/labyrinth/diagram.png',
+                src: '/project_images/labyrinth/diagram.png',
                 description: `This diagram shows the task diagram for the game\'s operating system. It includes the peripheral devices
                             as well as inter-task communication like Mutexes and event flags.`
             }
@@ -192,7 +192,7 @@ export const projectPageData = {
         duration: 'One Semester',
         images: [
             {
-                src: 'portfolio/project_images/car/loop.JPG',
+                src: '/project_images/car/loop.JPG',
                 description: `This schematic shows one iteration of the layout for the closed loop of the robot. It includes a MOSFET based direction controller, a 
                             motor driver, a speed sensor, and a compensator which ensures our motor is provided enough power to meet the desired speed.`
             }
