@@ -1,0 +1,5 @@
+
+- Create general project page UI layout template (what data is needed)
+- Create project span text
+- Create all project tiles
+- Publish to GitHub Pages
