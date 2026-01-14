@@ -18,7 +18,7 @@ export const assets = {
     hand_icon,
     right_arrow_white,
     right_arrow_bold,
-    download_icon
+    download_icon,
 };
 
 export const workData = [
