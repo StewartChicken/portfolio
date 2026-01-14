@@ -76,13 +76,11 @@ export const projectPageData = {
         duration: 'One Semester',
         images: [
             {
-                //src: '/project_images/riscv/IF.png',
-                src: assets.IF,
+                src: '/project_images/riscv/IF.png',
                 description: 'This diagram shows the design for the Instruction Fetch stage of the pipeline during a late stage of the project.'
             },
             {
-                //src: '/project_images/riscv/ID.png',
-                src: assets.ID,
+                src: '/project_images/riscv/ID.png',
                 description: 'This diagram shows the design for the Instruction Decode stage of the pipeline during a late stage of the project.'
             },
             {
